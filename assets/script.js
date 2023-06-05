@@ -12,18 +12,29 @@ $(function () {
 
 
   var saveBtn = $('.saveBtn');
-  var hrNineEvnt = $('#hour-9-event');
   saveBtn.on('click', function(){
-    var hrNineUserEvnt = {
-      hourNineUserInput: hrNineEvnt.val(),
-    }
-    localStorage.setItem("hour-9", JSON.stringify(hrNineUserEvnt));
-    function rendLastHrNineEvnt(){
-      var lastHourNineEvent = JSON.parse(localStorage.getItem("hour-9"));
-    }
-    rendLastHrNineEvnt();
+    var value = $(this)
+    .siblings('.description')
+    .val();
+    console.log(value)
+  var time = $(this)
+    .parent()
+    .attr('id');
+  console.log(time)
+  // save in localStorage
+  localStorage.setItem(time, value);
   })
-
+  $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+  
+  
+  // var hrNineUserEvnt = {
+  //   hourNineUserInput: hrNineEvnt.val(),
+  // }
+  // localStorage.setItem("hour-9", JSON.stringify(hrNineUserEvnt));
+  // function rendLastHrNineEvnt(){
+  //   var lastHourNineEvent = JSON.parse(localStorage.getItem("hour-9"));
+  // }
+  // rendLastHrNineEvnt();
 
 
   // TODO: Add code to apply the past, present, or future class to each time
