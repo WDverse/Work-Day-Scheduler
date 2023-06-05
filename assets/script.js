@@ -12,29 +12,39 @@ $(function () {
 
 
   var saveBtn = $('.saveBtn');
-  saveBtn.on('click', function(){
+  saveBtn.on('click', function () {
     var value = $(this)
-    .siblings('.description')
-    .val();
+      .siblings('.description')
+      .val();
     console.log(value)
-  var time = $(this)
-    .parent()
-    .attr('id');
-  console.log(time)
-  // save in localStorage
-  localStorage.setItem(time, value);
+    var time = $(this)
+      .parent()
+      .attr('id');
+    console.log(time)
+    // save in localStorage
+    localStorage.setItem(time, value);
   })
+
   $('#hour-9 .description').val(localStorage.getItem('hour-9'));
-  
-  
-  // var hrNineUserEvnt = {
-  //   hourNineUserInput: hrNineEvnt.val(),
-  // }
-  // localStorage.setItem("hour-9", JSON.stringify(hrNineUserEvnt));
-  // function rendLastHrNineEvnt(){
-  //   var lastHourNineEvent = JSON.parse(localStorage.getItem("hour-9"));
-  // }
-  // rendLastHrNineEvnt();
+
+  $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+
+  $('#hour-11 .description').val(localStorage.getItem('hour-11'));
+
+  $('#hour-12 .description').val(localStorage.getItem('hour-12'));
+
+  $('#hour-1 .description').val(localStorage.getItem('hour-1'));
+
+  $('#hour-2 .description').val(localStorage.getItem('hour-2'));
+
+  $('#hour-3 .description').val(localStorage.getItem('hour-3'));
+
+  $('#hour-4 .description').val(localStorage.getItem('hour-4'));
+
+  $('#hour-5 .description').val(localStorage.getItem('hour-5'));
+
+
+
 
 
   // TODO: Add code to apply the past, present, or future class to each time
