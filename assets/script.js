@@ -33,15 +33,15 @@ $(function () {
 
   $('#hour-12 .description').val(localStorage.getItem('hour-12'));
 
-  $('#hour-1 .description').val(localStorage.getItem('hour-1'));
+  $('#hour-13 .description').val(localStorage.getItem('hour-13'));
 
-  $('#hour-2 .description').val(localStorage.getItem('hour-2'));
+  $('#hour-14 .description').val(localStorage.getItem('hour-14'));
 
-  $('#hour-3 .description').val(localStorage.getItem('hour-3'));
+  $('#hour-15 .description').val(localStorage.getItem('hour-15'));
 
-  $('#hour-4 .description').val(localStorage.getItem('hour-4'));
+  $('#hour-16 .description').val(localStorage.getItem('hour-16'));
 
-  $('#hour-5 .description').val(localStorage.getItem('hour-5'));
+  $('#hour-17 .description').val(localStorage.getItem('hour-17'));
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
