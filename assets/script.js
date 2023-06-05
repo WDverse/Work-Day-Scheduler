@@ -10,16 +10,20 @@ $(function () {
   // useful when saving the description in local storage?
   //
 
-//-------------My Code----------------
-  // var saveBtn = $('.saveBtn');
-  // var eventTxt = 
-  // saveBtn.on('click', function(){
-  //   var userEvent = {
-  //     userInput: 
 
-  //   }
-  // })
-//-------------My Code----------------
+  var saveBtn = $('.saveBtn');
+  var hrNineEvnt = $('#hour-9-event');
+  saveBtn.on('click', function(){
+    var hrNineUserEvnt = {
+      hourNineUserInput: hrNineEvnt.val(),
+    }
+    localStorage.setItem("hour-9", JSON.stringify(hrNineUserEvnt));
+    function rendLastHrNineEvnt(){
+      var lastHourNineEvent = JSON.parse(localStorage.getItem("hour-9"));
+    }
+    rendLastHrNineEvnt();
+  })
+
 
 
   // TODO: Add code to apply the past, present, or future class to each time
