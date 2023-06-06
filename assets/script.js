@@ -25,23 +25,23 @@ $(function () {
     localStorage.setItem(time, value);
   })
 
-  $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+  $('#9 .description').val(localStorage.getItem('9'));
 
-  $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+  $('#10 .description').val(localStorage.getItem('10'));
 
-  $('#hour-11 .description').val(localStorage.getItem('hour-11'));
+  $('#11 .description').val(localStorage.getItem('11'));
 
-  $('#hour-12 .description').val(localStorage.getItem('hour-12'));
+  $('#12 .description').val(localStorage.getItem('12'));
 
-  $('#hour-13 .description').val(localStorage.getItem('hour-13'));
+  $('#13 .description').val(localStorage.getItem('13'));
 
-  $('#hour-14 .description').val(localStorage.getItem('hour-14'));
+  $('#14 .description').val(localStorage.getItem('14'));
 
-  $('#hour-15 .description').val(localStorage.getItem('hour-15'));
+  $('#15 .description').val(localStorage.getItem('15'));
 
-  $('#hour-16 .description').val(localStorage.getItem('hour-16'));
+  $('#16 .description').val(localStorage.getItem('16'));
 
-  $('#hour-17 .description').val(localStorage.getItem('hour-17'));
+  $('#17 .description').val(localStorage.getItem('17'));
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -50,6 +50,10 @@ $(function () {
   // current hour in 24-hour time?
 
   var currentHour = dayjs().format('H');
+
+  $(".time-block").each(function(index, el){
+    console.log(el.id)
+})
   
 
   
