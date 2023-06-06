@@ -50,14 +50,28 @@ $(function () {
   // current hour in 24-hour time?
 
   var currentHour = dayjs().format('H');
+  console.log(currentHour)
 
-  $(".time-block").each(function(index, el){
+  $('.time-block').each(function (index, el) {
     console.log(el.id)
-})
-  
+  })
 
-  
-  
+  var timeBlockEl = $('.time-block');
+
+  if(currentHour > el.id){
+    timeBlockEl.addClass('past');
+  }
+  else if (currentHour < el.id){
+    timeBlockEl.addClass('future');
+  }
+  else if (currentHour === el.id){
+    timeBlockEl.addClass('present');
+  }
+
+
+
+
+
 
 
 
