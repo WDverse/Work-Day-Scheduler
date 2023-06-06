@@ -13,14 +13,20 @@
   <title>Work Day Scheduler</title>
 </head>
 
+<!-- Body -->
+
 <body>
+
+  <!-- Header -->
   <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
+    <!-- Current Day -->
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container-lg px-5">
 
+    <!-- Timeblock for 9am -->
     <div id="9" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -29,6 +35,7 @@
       </button>
     </div>
 
+    <!-- Timeblock for 10am -->
     <div id="10" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -37,6 +44,8 @@
       </button>
     </div>
 
+
+    <!-- Timeblock for 11am -->
     <div id="11" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -44,6 +53,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 12pm -->
     <div id="12" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -51,6 +63,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 1pm -->
     <div id="13" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -58,6 +73,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 2pm -->
     <div id="14" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -65,6 +83,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 3pm -->
     <div id="15" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -72,6 +93,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 4pm -->
     <div id="16" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -79,6 +103,9 @@
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
     </div>
+
+
+    <!-- Timeblock for 5pm -->
     <div id="17" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -87,13 +114,22 @@
       </button>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Link to jquery library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    
+
+    <!-- Link to dayjs library -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    
+
+    <!-- Links to advanced dayjs formats -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
     <script>dayjs.extend(window.dayjs_plugin_advancedFormat)</script>
 
+
+    <!-- Link to local javascript file -->
     <script src="./assets/script.js"></script>
 </body>
 

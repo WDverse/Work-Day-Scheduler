@@ -1,4 +1,4 @@
-# My Portfolio
+# Work Day Scheduler
 
 
 ## Description
@@ -35,4 +35,4 @@ N/A
 
 
 Here is the link to the webpage:
-[My Portfolio](https://wdverse.github.io/My-Portfolio/)
+[Work Day Scheduler](https://wdverse.github.io/My-Portfolio/)

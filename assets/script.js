@@ -2,6 +2,7 @@
 $(function () {
   
   var saveBtn = $('.saveBtn');
+  //Add click event to save button
   saveBtn.on('click', function () {
     var value = $(this)
       .siblings('.description')
@@ -15,6 +16,7 @@ $(function () {
     localStorage.setItem(time, value);
   })
 
+  //Render saved items
   $('#9 .description').val(localStorage.getItem('9'));
 
   $('#10 .description').val(localStorage.getItem('10'));
@@ -33,7 +35,7 @@ $(function () {
 
   $('#17 .description').val(localStorage.getItem('17'));
 
-
+  //Current hour in 24-hour format
   var currentHour = dayjs().format('H');
   console.log(currentHour)
 
@@ -42,6 +44,7 @@ $(function () {
     var timeBlockEl = $(el);
     var blockHour = parseInt(el.id); // Convert el.id to a number
 
+    //Change colour of time block depending on time of day
     if (currentHour < blockHour) { 
       timeBlockEl.addClass('future');
     } else if (currentHour > blockHour) { 
@@ -51,6 +54,7 @@ $(function () {
     }
   })
 
+  //Display current date
   var currentDay = dayjs().format('dddd, MMMM Do')
   $('#currentDay').text(currentDay);
 });
