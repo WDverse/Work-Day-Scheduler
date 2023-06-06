@@ -4,8 +4,7 @@
 ## Description
 
 
-This webpage shows my portfolio. It has a codbase that follows accessibility  standards. The webpage contains some information about me, links to my works, and to contact me. Through this project, I realised that it's ideal to group elements appropriately into containers to enable seamless application of css properties. Media queries also allow for greater control over responsiveness.
-
+This webpage shows the timeblock for standard business hours. That is, from 9am to 5pm. On the webpage header, the current date is displayed. Every timeblock has a textarea that allows the user to enter an event, and a save button on the right side of the timeblock to save the event to the browser local storage. Through this project, I realised that id's and classes play an important role in DOM. This project benefitted imensely from collaboration through AskBCS.
 
 ## Installation
 
@@ -16,10 +15,9 @@ N/A
 ## Usage
 
 
-To use this webpage, you can review the information in each section. To access deployed web applications, click on the correspnding images. To quickly move to a section, click the section name on the navigation bar. To access a contact link, click on the corresponding name.
-
+To use this webpage, you can view the current date in the webpage header. You can also view the time in each in each timeblock and enter your event in the text area. To save your event to the browser local storage, click on the blue button to the right of the timeblock. The colour of the timeblock changes depending on if the timeblock is in the past (grey), present (red) and future (green).
 The following image shows the web application's appearance and functionality:
-![The Portfolio webpage includes a navigation bar, a header image, a profile picture and cards with text and images at the middle of the page, and contact links at the bottom of the page.](./assets/images/screenshot.png)
+![The Workday Scheduler webpage includes a header image, nine timeblocks shwoing the standard business hours (9am to 5pm) at the middle of the page, and blue save buttons to the right of each timeblock.](./assets/images/screenshot.png)
 
 ## Credits
 
