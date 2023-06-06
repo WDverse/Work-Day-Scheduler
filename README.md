@@ -4,7 +4,7 @@
 ## Description
 
 
-This webpage shows the timeblock for standard business hours. That is, from 9am to 5pm. On the webpage header, the current day is displayed. Every timeblock has a textarea that allows the user to enter an event, and a save button on the right side of the timeblock to save the event to the browser local storage. Through this project, I realised that id's and classes play an important role in DOM. This project benefitted imensely from collaboration through AskBCS.
+This webpage shows the timeblocks for standard business hours. That is, from 9am to 5pm. On the webpage header, the current day is displayed. Every timeblock has a textarea that allows the user to enter an event, and a save button on the right side of the timeblock to save the event to the browser local storage. Through this project, I realised that id's and classes play an important role in DOM. This project benefitted imensely from collaboration through AskBCS.
 
 ## Installation
 
@@ -35,4 +35,4 @@ N/A
 
 
 Here is the link to the webpage:
-[Work Day Scheduler]()
+[Work Day Scheduler](https://wdverse.github.io/Work-Day-Scheduler/)
